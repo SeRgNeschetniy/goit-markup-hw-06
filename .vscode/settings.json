@@ -1,0 +1,6 @@
+{
+  "diffEditor.wordWrap": "on",
+  "editor.wordWrap": "on",
+  "files.autoSave": "onFocusChange",
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
