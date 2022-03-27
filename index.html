@@ -413,16 +413,15 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="btn close-btn" data-modal-close>
+        <button type="button" class="btn btn-close" data-modal-close>
           <svg class="close-icon" width="11" height="11">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
-        <form class="contact-form">          
-          <div class="form-fields">
-            <label for="name" class="form-label">Имя</label>
-
+        <form class="contact-form">
+          <label class="form-fields">
+            <span class="form-label">Имя</span>
             <svg class="icon" width="18" height="18">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
@@ -431,34 +430,39 @@
               type="text"
               class="form-input"
               name="name"
-              id="name"
               required
               minlength="2"
               pattern="[a-zA-Zа-яёА-ЯЁ]+"
             />
-          </div>
-          <div class="form-fields">
-            <label for="phone" class="form-label">Телефон</label>
-           
-              <svg class="icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-          
-            <input type="tel" class="form-input" name="phone" id="phone" />
-          </div>
-          <div class="form-fields">
-            <label for="email" class="form-label">Почта</label>
-         
-              <svg class="icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-           
-            <input type="email" class="form-input" name="email" id="email" />
-          </div>
-          <div class="form-fields">
-            <label for="comment" class="form-label">Коментарий</label>
-            <textarea name="comment" id="comment" class="form-textarea" placeholder="Введите текст"></textarea>
-          </div>
+          </label>
+
+          <label class="form-fields">
+            <span class="form-label">Телефон</span>
+            <svg class="icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+            <input type="tel" class="form-input" name="phone" />
+          </label>
+
+          <label class="form-fields">
+            <span class="form-label">Почта</span>
+            <svg class="icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+            <input type="email" class="form-input" name="email" />
+          </label>
+
+          <label class="form-comment">
+            <span class="form-label">Коментарий</span>
+            <textarea name="comment" class="form-textarea" placeholder="Введите текст"></textarea>
+          </label>
+          <label class="form-agreement">
+            <input type="checkbox" class="form-checkbox visually-hidden" name="agreement" />
+            <span class="checkbox-icon"></span>
+            Соглашаюсь с рассылкой и принимаю&nbsp;
+            <a href="#" class="agreement-link link">Условия договора</a>
+          </label>
+          <button type="submit" class="btn btn-submit">Отправить</button>
         </form>
       </div>
     </div>
